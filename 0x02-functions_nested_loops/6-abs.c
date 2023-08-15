@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * _abs - Computes the absolute value of an integer.
- * @C: The number to be computed.
- * Return: Absolute value of number or zero
+ * Calcule la valeur absolue d'un nombre.
+ * Cette fonction prend un nombre en entrée et renvoie sa valeur absolue.
+ * @param c Le nombre dont vous voulez calculer la valeur absolue.
+ * @return La valeur absolue de 'c'.
  */
 int _abs(int c)
 {
