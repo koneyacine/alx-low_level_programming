@@ -1,17 +1,12 @@
 #include "main.h"
 /**
- * Calcule la valeur absolue d'un nombre.
- * Cette fonction prend un nombre en entrée et renvoie sa valeur absolue.
- * @param c Le nombre dont vous voulez calculer la valeur absolue.
- * @return La valeur absolue de 'c'.
- */
-int _abs(int c)
+* _abs - function that computes the absolute value of an integer
+*@n: takes in integer type input for function
+*Return: Always 0 (Success)
+*/
+int _abs(int n)
 {
-if (c < 0)
-{
-int abs_val;
-abs_val = c * -1;
-return (abs_val);
-}
-return (c);
+if (n < 0)
+n = (-1) * n;
+return (n);
 }
