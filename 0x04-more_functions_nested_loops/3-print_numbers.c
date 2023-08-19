@@ -4,7 +4,7 @@
 /**
  * print_number - Prints the numbrs from o to 9 folowed by a new line.
  */
-void print_numebrs(void)
+void print_numbers(void)
 {
 	int i;
 	
