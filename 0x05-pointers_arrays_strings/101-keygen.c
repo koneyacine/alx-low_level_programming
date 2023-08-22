@@ -4,10 +4,10 @@
 #define PASSWORD_LENGTH 12
 int main(void)
 {
-srand(time(NULL));
 char valid_characters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 char password[PASSWORD_LENGTH + 1];
 int i;
+srand(time(NULL));
 for (i = 0; i < PASSWORD_LENGTH; i++)
 {
 int index = rand() % (int)(sizeof(valid_characters) - 1);
