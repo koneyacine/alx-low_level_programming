@@ -13,7 +13,7 @@ for (i = 0; i < PASSWORD_LENGTH; i++)
 int index = rand() % (sizeof(valid_characters) - 1);
 password[i] = valid_characters[index];
 }
-password[PASSWORD_LENGTH] = '\0'; // Null-terminate the password
+password[PASSWORD_LENGTH] = '\0';
 printf("%s\n", password);
  return 0;
 }
