@@ -5,7 +5,6 @@
 #define PASSWORD_LENGTH 63
 int main(void)
 {
-
 char valid_characters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 char password[PASSWORD_LENGTH + 1];
 srand(time(NULL));
