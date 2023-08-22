@@ -12,7 +12,7 @@ int result = 0;
 int i = 0;
 while (s[i] != '\0')
 {
-if (s[i] == '-') 
+if (s[i] == '-')
 {
 sign *= -1;
 }
@@ -23,11 +23,11 @@ if (result > INT_MAX / 10 || (result == INT_MAX / 10 && digit > INT_MAX % 10))
 {
 if (sign == 1)
 {
-return INT_MAX;
+return (INT_MAX);
 }
 else
 {
-return INT_MIN;
+return (INT_MIN);
 }
 }
 result = result * 10 + digit;
@@ -38,5 +38,5 @@ break;
 }
 i++;
 }
-return result * sign;
+return (result * sign);
 }
