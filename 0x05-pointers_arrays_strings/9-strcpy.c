@@ -14,6 +14,6 @@ while (*src != '\0')
 dest++;
 src++;
 }
-*dest = '\0'; // Add the null-terminating byte
+*dest = '\0';
 return original_dest;
 }
