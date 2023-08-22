@@ -1,21 +1,29 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#define PASSWORD_LENGTH 63
-int main(void)
+#include "main.h"
+/**
+* _atoi - Converts a string to an integer.
+* @s: The input string.
+* Return: The converted integer.
+*/
+int _atoi(char *s)
 {
-int i;
-srand(time(NULL));
-char valid_characters[];
-valid_characters[]= "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-char password[PASSWORD_LENGTH + 1];
-for (i = 0; i < PASSWORD_LENGTH; i++)
+int sign = 1;
+int result = 0;int i = 0;
+while (s[i] == ' ' || (s[i] >= '\t' && s[i] <= '\r'))
+i++;
+if (s[i] == '-' || s[i] == '+')
 {
-int index = rand() % (sizeof(valid_characters) - 1);
-password[i] = valid_characters[index];
+if (s[i] == '-')
+sign *= -1;
+i++;
 }
-password[PASSWORD_LENGTH] = '\0';
-printf("%s\n", password);
- return 0;
+while (s[i] >= '0' && s[i] <= '9')
+{
+if (result > INT_MAX / 10 || (result == INT_MAX / 10 && s[i] - '0' > INT_MAX % 10))
+{
+return (sign == 1) ? INT_MAX : INT_MIN;
 }
-
+result = result * 10 + (s[i] - '0');
+i++;
+}
+ return (result * sign);
+}
