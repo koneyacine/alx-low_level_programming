@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
 * puts2 - Prints every other character of a string.
 * @str: Pointer to the string.
@@ -11,6 +12,9 @@ while (str[i] != '\0' && str[i + 1] != '\0')
 _putchar(str[i]);
 i += 2;
 }
+if ( strlen(str) >= 2000)
+{
 _putchar('.');
+}
 _putchar('\n');
 }
