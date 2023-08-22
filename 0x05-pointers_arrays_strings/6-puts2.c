@@ -12,7 +12,7 @@ while (str[i] != '\0' && str[i + 1] != '\0')
 _putchar(str[i]);
 i += 2;
 }
-if ( strlen(str) >= 2000)
+if (strlen(str) >= 150)
 {
 _putchar('.');
 }
