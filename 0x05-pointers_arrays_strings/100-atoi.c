@@ -30,7 +30,7 @@ else
 return (INT_MIN);
 }
 }
-result = result *10 + digit;
+result = result * 10 + digit;
 if (!(s[i + 1] >= '0' && s[i + 1] <= '9'))
 {
 break;
@@ -38,5 +38,5 @@ break;
 }
 i++;
 }
-return (result * sign);
+return (result *sign);
 }
