@@ -6,7 +6,8 @@ int main(void)
 {
 int i;
 srand(time(NULL));
-char valid_characters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+char valid_characters[];
+valid_characters[]= "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 char password[PASSWORD_LENGTH + 1];
 for (i = 0; i < PASSWORD_LENGTH; i++)
 {
