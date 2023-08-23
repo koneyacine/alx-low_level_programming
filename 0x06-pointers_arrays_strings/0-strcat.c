@@ -1,5 +1,10 @@
 #include "main.h"
-char *_strcat(char *dest, char *src)
+/*
+Streat function that concatena @dest: pointer to destnation input 
+*@arc: pointer to source input 
+*Return: pointer to resulting string @dast* 
+*char *_strcat(char *dest, char *src)
+*/
 {
 int dest_length = 0 ;
 int j= 0 ;
