@@ -9,7 +9,7 @@ dest_length++ ;
 }
 while (str[j] != 0)
 {
-dest[dest_length]= str[j] ;
+dest[dest_length]= src[j] ;
 dest_length++ ;
 j ++ ;
 }
