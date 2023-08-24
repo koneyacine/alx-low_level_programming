@@ -3,7 +3,6 @@
 * _strcmp - Compare two strings.
 * @s1: Pointer to the first string.
 * @s2: Pointer to the second string.
-*
 * Return: An integer less than, equal to, or greater than zero if the first
 *         string is found, respectively, to be less than, to match, or be
 *         greater than the second string.
@@ -18,6 +17,6 @@ return (*s1 - *s2);
 }
 s1++;
 s2++;
-return (*s1 - *s2);
+return (*s2 - *s3);
 }
 }
