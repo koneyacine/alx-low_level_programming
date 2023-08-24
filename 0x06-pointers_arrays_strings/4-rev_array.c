@@ -8,7 +8,7 @@ nclude "main.h"
 void reverse_array(int *a, int n)
 {
 int tem ;
-int start ;
+int start=0 ;
 int end = n-1 ;
 while (start < end )
 temp = a[start] ;
