@@ -7,7 +7,7 @@ nclude "main.h"
 */
 void reverse_array(int *a, int n)
 {
-int tem ;
+int temp ;
 int start=0 ;
 int end = n-1 ;
 while (start < end )
@@ -18,4 +18,3 @@ start++ ;
 end--;
 }
 }
-
