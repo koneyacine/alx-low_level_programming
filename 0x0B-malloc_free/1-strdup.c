@@ -13,7 +13,7 @@ if (str == NULL)
 return (NULL);
 }
 size = strlen(str);
-*copie = (char *)malloc(size);
+copie = (char *)malloc(size);
 if (copie == NULL)
 {
 strcpy(copie , str);
