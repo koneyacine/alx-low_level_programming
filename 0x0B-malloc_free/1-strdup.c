@@ -1,11 +1,6 @@
 #include "main.h"
 #include <string.h>
 /**
-*This function creates a dynamically allocated copy of a string
-*@param str The original string to copy.
-*@return A pointer to the dynamically allocated copy.
-*/
-/**
 * _strdup - Duplicate a string.
 * @str: The string to duplicate.
 *
