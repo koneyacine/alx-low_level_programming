@@ -5,12 +5,13 @@
 */
 
 char *_strdup(char *str)
-int size;	
+{	
+size_t size;	
 char *copie;
 {
 if (str == NULL)
 {
-return NULL;
+return (NULL);
 }
 size = strlen(str);
 *copie = (char *)malloc(size);
