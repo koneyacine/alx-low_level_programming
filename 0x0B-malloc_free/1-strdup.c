@@ -16,7 +16,7 @@ return (NULL);
 }
 size = strlen(str);
 copie = (char *)malloc(size + 1);
-if (copie != NULL)
+if (copie == NULL)
 {
 return (NULL);
 }
