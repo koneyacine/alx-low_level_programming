@@ -8,12 +8,12 @@
 * Return: A pointer to the newly allocated array, or NULL on failure.
 */
 char *create_array(unsigned int size, char c)
+char *array = (char *)malloc(size * sizeof(char));
 {
 if (size == 0)
 {
 return (NULL);
 }
-char *array = (char *)malloc(size * sizeof(char));
 if (array == NULL)
 {
 return (NULL);
