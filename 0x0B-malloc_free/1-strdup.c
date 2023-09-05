@@ -20,6 +20,6 @@ if (copie == NULL)
 {
 return (NULL);
 }
-strcpy(copie , str);
+strcpy(copie, str);
 return (copie);
 }
