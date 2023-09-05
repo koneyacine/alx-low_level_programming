@@ -5,6 +5,18 @@
 *@param str The original string to copy.
 *@return A pointer to the dynamically allocated copy.
 */
+/**
+* _strdup - Duplicate a string.
+* @str: The string to duplicate.
+*
+* Description:
+* This function takes a string `str` as input and creates a dynamically
+* allocated copy of it. The copied string is a duplicate of the input string.
+*
+* Return:
+* On success, a pointer to the duplicated string is returned. On failure
+* (if memory allocation fails or if `str` is NULL), NULL is returned.
+*/
 
 char *_strdup(char *str)
 {
