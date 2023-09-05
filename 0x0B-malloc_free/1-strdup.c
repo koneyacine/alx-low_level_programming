@@ -6,13 +6,14 @@
 
 char *_strdup(char *str)
 {
+char *copie;
 size_t size;
 if (str == NULL)
 {
 return (NULL);
 }
 size = strlen(str);
-char *copie = (char *)malloc(size);
+*copie = (char *)malloc(size);
 if (copie == NULL)
 {
 strcpy(copie , str);
