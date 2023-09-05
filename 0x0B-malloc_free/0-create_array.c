@@ -24,6 +24,5 @@ for (i = 0; i < size; i++)
 {
 array[i] = c;
 }
-_putchar(\n);
 return (array);
 }
