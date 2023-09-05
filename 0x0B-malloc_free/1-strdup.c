@@ -5,17 +5,15 @@
 */
 
 char *_strdup(char *str)
-{	
-size_t size;	
-char *copie;
 {
+size_t size;
 if (str == NULL)
 {
 return (NULL);
 }
 size = strlen(str);
-*copie = (char *)malloc(size);
-if (copie = NULL)
+char *copie = (char *)malloc(size);
+if (copie == NULL)
 {
 strcpy(copie , str);
 }
