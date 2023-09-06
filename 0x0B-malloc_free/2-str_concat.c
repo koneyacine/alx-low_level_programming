@@ -5,7 +5,7 @@
 * @param s2 The second string of characters to concatenate to the first one.
 * @return A pointer to the resulting string (dynamically allocated) or NULL in case of failure.
 */
-char *str_concat(const char *s1, const char *s2)
+char *str_concat(char *s1, char *s2)
 {
 size_t len1 = strlen(s1);
 size_t len2 = strlen(s2);
