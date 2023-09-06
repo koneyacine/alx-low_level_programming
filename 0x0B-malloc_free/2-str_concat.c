@@ -29,6 +29,7 @@ len1 = strlen(s1);
 if (s2 == NULL)
 {
 len2 = 0;
+}
 else
 {
 len2 = strlen(s2);
