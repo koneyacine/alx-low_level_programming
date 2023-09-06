@@ -18,10 +18,14 @@ if (s1 == NULL && s2 == NULL)
 {
 return (NULL);
 }
-if (s1 == NULL){
+if (s1 == NULL)
+{
 len1 = 0;
+}
 else
+{
 len1 = strlen(s1);
+}
 if (s2 == NULL)
 {
 len2 = 0;
