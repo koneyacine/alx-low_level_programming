@@ -40,7 +40,7 @@ if (result == NULL)
 {
 return (NULL);
 }
-if ( s1!= NULL)
+if (s1 != NULL)
 {
 strcpy(result, s1);
 }
