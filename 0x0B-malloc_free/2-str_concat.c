@@ -40,7 +40,13 @@ if (result == NULL)
 {
 return (NULL);
 }
+if (s1!= NULL)
+{	
 strcpy(result, s1);
+}
+if (s2 != NULL)
+{
 strcat(result, s2);
+}
 return (result);
 }
