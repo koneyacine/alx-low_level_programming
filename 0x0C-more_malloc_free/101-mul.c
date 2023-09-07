@@ -7,13 +7,13 @@
 */
 int is_digit(char *str)
 {
-    while (*str)
-    {
-    if (*str < '0' || *str > '9')
-    return (0);
-    str++;
-    }
-    return (1);
+while (*str)
+{
+if (*str < '0' || *str > '9')
+return (0);
+str++;
+}
+return (1);
 }
 
 /**
@@ -61,7 +61,7 @@ carry = product / 10;
 result[k] = (product % 10) + '0';
 }
 if (carry > 0)
-result[i] = (result[i] - '0' + carry) + '0';
+result[i] = (result[i] - '0'+ carry) + '0';
 }
 return (result);
 }
