@@ -1,8 +1,9 @@
 #include "main.h"
 /*
-* malloc_cheked function that check 
-* b size of memory allocated
-* ptr pointer to the adress memory allocated 
+* malloc_cheked function that allocate memory using
+* malloc and exit if failed
+*@b :int
+* return : pointeur to the allocated memory or NULL
 */
 
 void *malloc_checked(unsigned int b)
