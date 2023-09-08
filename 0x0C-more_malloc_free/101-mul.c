@@ -30,7 +30,10 @@ int i;
 int j;
 int k;
 char *result;
-
+int carry;
+int n1;
+int n2 ;
+int product;
 while (num1[len1])
 {
 len1++;
@@ -51,12 +54,12 @@ result[i] = '0';
 result[i] = '\0';
 for (i = len1 - 1; i >= 0; i--)
 {
-int carry = 0;
-int n1 = num1[i] - '0';
+carry = 0;
+n1 = num1[i] - '0';
 for (j = len2 - 1, k = i + len2; j >= 0; j--, k--)
 {
-int n2 = num2[j] - '0';
-int product = (result[k] - '0') + (n1 * n2) + carry;
+n2 = num2[j] - '0';
+product = (result[k] - '0') + (n1 * n2) + carry;
 carry = product / 10;
 result[k] = (product % 10) + '0';
 }
