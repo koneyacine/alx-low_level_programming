@@ -71,6 +71,7 @@ return (result);
 
 int main(int argc, char *argv[])
 {
+char *result;
 if (argc != 3 || !is_digit(argv[1]) || !is_digit(argv[2]))
 {
 printf("Error\n");
