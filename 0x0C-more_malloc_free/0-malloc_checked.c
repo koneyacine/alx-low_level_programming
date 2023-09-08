@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
-* function_name - One-line description
-* @parameter1: Description of parameter 1
-* @parameter2: Description of parameter 2
+* malloc_checked - Allocate memory using malloc and exit if failed
+* @b: The number of bytes to allocate
 *
-* Longer description (if needed) that provides more details
-* about the function and its behavior.
+* This function allocates memory using malloc for a specified number of bytes.
+* If the allocation fails (malloc returns NULL), the function exits with an
+* error code 98.
 *
-* Return: Description of the return value (if any)
+* Return: A pointer to the allocated memory if successful, or NULL on failure.
 */
 
 
