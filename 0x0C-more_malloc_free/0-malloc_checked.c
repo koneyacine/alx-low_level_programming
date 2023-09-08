@@ -1,6 +1,6 @@
 #include "main.h"
 /*
-* malloc_cheked function that allocate memory using
+* @b :malloc_cheked function that allocate memory using
 * malloc and exit if failed
 *@b :int
 * return : pointeur to the allocated memory or NULL
