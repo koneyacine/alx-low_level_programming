@@ -73,7 +73,7 @@ if (argc != 3 || !is_digit(argv[1]) || !is_digit(argv[2]))
 printf("Error\n");
 return (98);
 }
-char *result = multiply(argv[1], argv[2]);
+result = multiply(argv[1], argv[2]);
 if (result == NULL)
 {
 printf("Error\n");
