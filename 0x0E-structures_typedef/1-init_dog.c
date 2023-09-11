@@ -7,15 +7,9 @@
 * @owner: Owner of the dog.
 * Description: This function initializes a dog structure with provided values.
 */
-
-
-
-
-
-
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-(d *).name = name;
-(d *).age = age;
-(d *).owner = owner;
+d->name = name;
+d->age = age;
+d->owner = owner;
 }
