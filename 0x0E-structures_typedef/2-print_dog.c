@@ -13,5 +13,5 @@ return;
 }
 printf("Name: %s", d->name ? d->name : "nil");
 print("Age: %f\n", d->age);
-printf("Owner %s", d->Owner ? d->Owner : "nil);
+printf("Owner %s", d->Owner ? d->Owner : "nil");
 }
