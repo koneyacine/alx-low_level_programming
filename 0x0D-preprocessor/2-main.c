@@ -1,15 +1,14 @@
-#include<stdio.h>
+#include <stdio.h>
+
+
 /**
-* main - is the function.
-*
-* It uses the __FILE__ macro to get the name of
-* the current source file
-* and prints it to the standard output.
-* Return : 0 on success.
-*/
+ * main - Entry point of the program
+ *
+ * Return: Always returns 0 to indicate success.
+ */
 
 int main(void)
 {
-printf("%s\n", __FILE__);
-return (0);
+	printf("%s\n", __FILE__);
+	return (0);
 }
