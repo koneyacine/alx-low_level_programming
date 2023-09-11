@@ -4,8 +4,7 @@
 *
 * It uses the __FILE__ macro to get the name of
 * the current source file
-* and prints it to the standard output. 
-*
+* and prints it to the standard output.
 * Return : 0 on success.
 */
 
