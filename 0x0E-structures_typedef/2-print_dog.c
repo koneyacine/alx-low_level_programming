@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 #include "dog.h"
 /**
 * print_dog - Prints informations about a dog stucture
