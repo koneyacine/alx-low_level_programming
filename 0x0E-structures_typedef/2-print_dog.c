@@ -11,7 +11,7 @@ if (d == NULL)
 {
 return;
 }
-printf("Name: %s", (d->name == NULL) ? "nil" : d->name);
-print("Age: %.6f\n", d->age);
-printf("Owner %s", (d->)Owner == NULL) ? "nil" : d->Owner);
+printf("Name: %s", d->name ? d->name : "nil");
+print("Age: %f\n", d->age);
+printf("Owner %s", d->Owner ? d->Owner : "nil);
 }
