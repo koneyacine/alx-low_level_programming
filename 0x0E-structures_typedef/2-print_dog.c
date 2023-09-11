@@ -1,6 +1,5 @@
 #include "dog.h"
 #include <stdio.h>
-catgpt ;---------------------
 /**
 * print_dog - Prints information about a dog structure
 * @d: Pointer to the dog structure.
