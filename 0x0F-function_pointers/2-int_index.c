@@ -4,6 +4,7 @@
 * int_index - earch the index of an intiger
 *@array: pointere to an array
 *@size: length of the array
+*@cmp: function that will be called
 *
 *Return: Nothing
 */
@@ -24,4 +25,5 @@ return (i);
 }
 i++;
 }
+return (-1);
 }
