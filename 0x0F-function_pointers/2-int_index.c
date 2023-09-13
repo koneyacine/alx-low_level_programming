@@ -16,13 +16,12 @@ if (size <= *end)
 {
 return (-1);
 }
-while (array <= end)
+while (i < size)
 {
-if (cmp(array))
+if (cmp(array[i]))
 {
 return (i);
 }
-array++;
 i++;
 }
 }
