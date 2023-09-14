@@ -19,7 +19,12 @@ int num1, num2, result;
 int (*opration)(int, int);
 if (argc != 4)
 {
-printf("Error\n");
+_putchar('E');
+_putchar('r');
+_putchar('r');
+_putchar('o');
+_putchar('r');
+_putchar('\n');
 return (98);
 }
 num1 = atoi(argv[1]);
@@ -27,10 +32,20 @@ num2 = atoi(argv[3]);
 opration = get_op_func(argv[2]);
 if (opration == NULL)
 {
-printf("Error\n");
+_putchar('E');
+_putchar('r');
+_putchar('r');
+_putchar('o');
+_putchar('r');
+_putchar('\n');
 return (99);
 }
 result = opration(num1, num2);
-printf("%d\n", result);
+_putchar('E');
+_putchar('r');
+_putchar('r');
+_putchar('o');
+_putchar('r');
+_putchar('\n');
 return (0);
 }

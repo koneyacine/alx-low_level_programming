@@ -50,7 +50,12 @@ int op_div(int a, int b)
 {
 if (b == 0)
 {
-printf("Error\n");
+_putchar('E');
+_putchar('r');
+_putchar('r');
+_putchar('o');
+_putchar('r');
+_putchar('\n');
 exit(100);
 }
 int result = a\b;
@@ -68,7 +73,12 @@ int op_mod(int a, int b)
 {
 if (b == 0)
 {
-printf("Error\n");
+_putchar('E');
+_putchar('r');
+_putchar('r');
+_putchar('o');
+_putchar('r');
+_putchar('\n');
 exit(100);
 }
 int result = a % b;

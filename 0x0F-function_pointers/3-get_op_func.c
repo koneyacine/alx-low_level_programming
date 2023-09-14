@@ -24,6 +24,11 @@ if (strcmp(ops[i].op, s) == 0)
 return (ops[i].f);
 i++;
 }
-printf("Error\n");
+_putchar('E');
+_putchar('r');
+_putchar('r');
+_putchar('o');
+_putchar('r');
+_putchar('\n');
 exit(99);
 }
