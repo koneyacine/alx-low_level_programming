@@ -51,7 +51,7 @@ return (result);
 
 int op_div(int a, int b)
 {
-int result = 0;
+int result;
 if (b == 0)
 {
 _putchar('E');
@@ -62,7 +62,7 @@ _putchar('r');
 _putchar('\n');
 exit(100);
 }
-result = a \ b;
+result = a / b;
 return (result);
 }
 
@@ -75,7 +75,7 @@ return (result);
 
 int op_mod(int a, int b)
 {
-int result = 0;
+int result;
 if (b == 0)
 {
 _putchar('E');
@@ -86,7 +86,6 @@ _putchar('r');
 _putchar('\n');
 exit(100);
 }
-int result;
 result = a % b;
 return (result);
 }
