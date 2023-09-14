@@ -1,5 +1,5 @@
 #include "3-calc.h"
-
+#include<stdio.h>
 /**
  * op_add - returns the sum of a and b
  * @a: first integer

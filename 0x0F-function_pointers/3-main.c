@@ -24,13 +24,13 @@ return (98);
 }
 num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
-operation = get_op_func(argv[2]);
-if (operation == NULL)
+opration = get_op_func(argv[2]);
+if (opration == NULL)
 {
 printf("Error\n");
 return (99);
 }
-result = operation(num1, num2);
+result = opration(num1, num2);
 printf("%d\n", result);
 return (0);
 }
