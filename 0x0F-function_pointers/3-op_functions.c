@@ -1,5 +1,5 @@
 #include "3-calc.h"
-#include<stdio.h>
+#include <stdio.h>
 /**
  * op_add - returns the sum of a and b
  * @a: first integer
@@ -9,7 +9,8 @@
 
 int op_add(int a, int b)
 {
-int result = a + b;
+int result;
+result = a + b;
 return (result);
 }
 
@@ -22,7 +23,8 @@ return (result);
 
 int op_sub(int a, int b)
 {
-int result = a - b;
+int result;
+result = a - b;
 return (result);
 }
 
@@ -35,7 +37,8 @@ return (result);
 
 int op_mul(int a, int b)
 {
-int result = a * b;
+int result;
+result = a * b;
 return (result);
 }
 
@@ -58,7 +61,8 @@ _putchar('r');
 _putchar('\n');
 exit(100);
 }
-int result = a\b;
+int result;
+result = a\b;
 return (result);
 }
 
@@ -81,7 +85,8 @@ _putchar('r');
 _putchar('\n');
 exit(100);
 }
-int result = a % b;
+int result;
+result = a % b;
 return (result);
 }
 
