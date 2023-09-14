@@ -19,12 +19,12 @@ int num1, num2,result = 0;
 int (*opration)(int, int);
 if (argc != 4)
 {
-_putchar('E');
-_putchar('r');
-_putchar('r');
-_putchar('o');
-_putchar('r');
-_putchar('\n');
+_putchar(E);
+_putchar(r);
+_putchar(r);
+_putchar(o);
+_putchar(r);
+_putchar(\n);
 return (98);
 }
 num1 = atoi(argv[1]);
