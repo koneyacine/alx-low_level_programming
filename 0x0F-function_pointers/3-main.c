@@ -24,6 +24,7 @@ _putchar('r');
 _putchar('r');
 _putchar('o');
 _putchar('r');
+_putchar('\n');
 return (98);
 }
 num1 = atoi(argv[1]);
@@ -40,11 +41,6 @@ _putchar('\n');
 return (99);
 }
 result = opration(num1, num2);
-_putchar('E');
-_putchar('r');
-_putchar('r');
-_putchar('o');
-_putchar('r');
-_putchar('\n');
+printf("%d\n", result);
 return (0);
 }
