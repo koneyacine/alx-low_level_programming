@@ -31,20 +31,24 @@ printf("%s%f", separator, va_arg(args, double));
 break;
 case 's':
 {
-char *str = va_arg(args, char));
-if (str == NULL)
+int str = va_arg(args, int);
+char c = (char)str;
+if (c == '\0')
 {
 printf("%s(nil)", separator);
 }
 else
 {
-printf("%s%s", separator, str);
+printf("%s%d", separator, str);
 break;
 }
 }
 default:
-i++;
-continue;
+{
+	i++;
+	continue;
+	break;
+}
 }
 separator = ", ";
 i++;
