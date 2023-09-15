@@ -3,13 +3,62 @@
 #include <stdarg.h>
 
 /**
- * print_all - prints anything based on a format string
- * @format: a list of types of arguments passed to the function
- *           c: char
- *           i: integer
- *           f: float
- *           s: char * (if the string is NULL, print (nil) instead)
+ * print_char - Imprime un caractère.
+ * @args: Liste d'arguments variable.
+ * @separator: Séparateur à utiliser.
  */
+
+void print_char(va_list args, char *separator)
+{
+printf("%s%c", separator, va_arg(args, int));
+}
+
+/**
+ * print_int - Imprime un entier.
+ * @args: Liste d'arguments variable.
+ * @separator: Séparateur à utiliser.
+ */
+
+void print_int(va_list args, char *separator)
+{
+printf("%s%d", separator, va_arg(args, int));
+}
+
+/**
+ * print_float - Imprime un flottant.
+ * @args: Liste d'arguments variable.
+ * @separator: Séparateur à utiliser.
+ */
+
+void print_float(va_list args, char *separator)
+{
+printf("%s%f", separator, va_arg(args, double));
+}
+
+/**
+ * print_string - Imprime une chaîne de caractères.
+ * @args: Liste d'arguments variable.
+ * @separator: Séparateur à utiliser.
+ */
+
+void print_string(va_list args, char *separator)
+{
+char *str = va_arg(args, char *);
+if (str == NULL)
+{
+printf("%s(nil)", separator);
+}
+else
+{
+printf("%s%s", separator, str);
+}
+}
+
+/**
+ * print_all - Imprime une liste d'arguments basée sur un format.
+ * @format: Format de la liste d'arguments.
+ */
+
 void print_all(const char * const format, ...)
 {
 va_list args;
@@ -21,34 +70,19 @@ while (format && format[i])
 switch (format[i])
 {
 case 'c':
-printf("%s%c", separator, va_arg(args, int));
+print_char(args, separator);
 break;
 case 'i':
-printf("%s%d", separator, va_arg(args, int));
+print_int(args, separator);
 break;
 case 'f':
-printf("%s%f", separator, va_arg(args, double));
+print_float(args, separator);
 break;
 case 's':
-{
-int str = va_arg(args, int);
-char c = (char)str;
-if (c == '\0')
-{
-printf("%s(nil)", separator);
-}
-else
-{
-printf("%s%d", separator, str);
+print_string(args, separator);
 break;
-}
-}
 default:
-{
-	i++;
-	continue;
-	break;
-}
+break;
 }
 separator = ", ";
 i++;
