@@ -31,7 +31,7 @@ return (NULL);
 new_node->len = 0;
 while (str[new_node->len])
 {
-        new_node->len++;
+new_node->len++;
 }
 new_node->next = *head;
 
