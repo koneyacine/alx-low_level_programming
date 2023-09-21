@@ -15,7 +15,7 @@ size_t compteur = 0;
 while (h != NULL)
 {
 h = h->next;
-i++;
+compteur++;
 }
 return (compteur);
 }
