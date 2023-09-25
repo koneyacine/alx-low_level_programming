@@ -13,12 +13,13 @@ size_t print_listint_safe(const listint_t *h)
 size_t n = 0;
 const listint_t *current = h;
 const listint_t *list[1024];
+size_t i;
 
 while (current != NULL)
 {
 int found = 0;
 
-for (size_t i = 0; i < n; i++)
+for (i = 0; i < n; i++)
 {
 if (current == list[i])
 {
