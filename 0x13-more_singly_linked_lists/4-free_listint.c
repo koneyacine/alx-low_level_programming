@@ -12,7 +12,7 @@ listint_t *neud;
 
 while (head)
 {
-neud= head;
+neud = head;
 head = head->next;
 free(neud);
 }
